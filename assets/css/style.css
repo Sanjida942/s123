@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --Roboto: 'Roboto', sans-serif;
+    --Rubik: "Rubik", cursive;
+    --Oswald: 'Oswald', sans-serif;
+}
+
+
+html{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+.nav a:hover{
+    text-decoration: none;
+    /* color: black; */
+}
+
+#header{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 12vh;
+    padding-top: 20px;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 3px;
+    position: absolute;
+    transform: all 0.3s;
+    background: white;
+    z-index: 9;
+    top: 0px;
+    width: 100%;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav ul li{
+    display: flex;
+}
+.nav ul li a{
+    font-family: var(--Roboto);
+    font-size: 1.1em;
+    color: #333;
+    padding: 0.25rem 0;
+    margin: 10px 1.50rem;
+}
+
+
+
+.nav.stiky{
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.35);
+    animation-name: animationFade;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+@keyframes animationFade{
+    from{
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to{
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+        -o-transform: none;
+    }
+}
+.nav.stiky a{
+    color: #18191d;
+}
+
+
+
+
+#banner{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#banner .item{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#banner .item img{
+    max-width: 100%;
+    margin: 0;
+}
+#banner .col-xl-12,.col-lg-12,.col-md-12,.col-sm-12{
+    padding:0;
+}
+.owl-dots{
+    display: none;
+}
+#banner .owl-nav{
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 30px;
+}
+#banner .owl-nav .owl-prev{
+    position: absolute;
+    bottom:250px;
+    left: 15px;
+    border: none;
+    outline: none;
+}
+#banner .owl-nav .owl-next{
+    position: absolute;
+    bottom: 250px;
+    right: 15px;
+    border: none;
+    outline: none;
+}
+#banner .owl-nav button span{
+    /*border:1px solid white;*/
+    padding: 0px 20px 6px 20px;
+    font-size:30px;
+    font-weight: 600;
+    display:inline-block;
+    border-radius: 50%;
+
+}
+#banner .owl-nav button{
+    background: rgba(0,0,0,0.7);
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+#banner .owl-nav button:hover{
+    border-radius: 50%;
+    background: white;
+    color: black;
+}
+.title{
+    line-height: 60px;
+    color: #555;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    position: relative;
+}
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.head{
+    color: #555;
+    font-weight: 500;
+    padding-top: 10px;
+    font-size: 19px;
+}
+.price{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.product{
+    transition: transform 0.5s;
+    border: 1px solid orange;
+}
+.product:hover{
+    transform: translateY(-5px);
+}
+.product img{
+    border-bottom: 1px solid orange;
+}
+#our-products{
+    max-width: 100%;
+    margin: auto;
+}
+
+#our-products .row{
+    padding-bottom: 30px;
+}
+#featured-products{
+    padding-bottom: 30px; 
+}
+
+
+#footer{
+    background-color: black;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0px 20px 0px;
+    cursor: pointer;
+}
+#footer p{
+    color: #8a8a8a;
+}
+#footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+#footer .footer-1, .footer-2, .footer-3, .footer-4{
+    margin-bottom: 20px!important;
+}
+#footer .footer-1{
+    margin-bottom: 30px!important;
+}
+.footer-2 img{
+    margin-bottom: 20px;
+}
+ul{
+    list-style: none;
+}
+.app-logo{
+    margin-top: 20px;
+}
+#footer hr{
+    border: none;
+    background-color: #b5b5b5;
+    height: 1px;
+    margin: 20px 0px;
+}
+.name{
+    color: #ff523b;
+}
+
+.pro-title{
+    padding-bottom: 50px;
+}
+
+#pro-details{
+    margin-top: 80px;
+    font-family: 'Poppins', sans-serif;
+}
+#pro-details .pro-details-price{
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pro-details-text h3{
+    margin-top: 30px;
+}
+
+#latest-products{
+    max-width: 100%;
+    margin: auto;
+    /* padding-right: 7vmin;
+    padding-left: 7vmin; */
+}
+#featured-products{
+    max-width: 100%;
+    margin: auto;
+    /* padding-right: 7vmin;
+    padding-left: 7vmin; */
+}
+#latest-products .row{
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+    #navigation .row{
+        margin: 0vmin 0vmin;
+        padding-bottom: 10vmin;
+        padding-top: 2vmin;
+    }
+    header .nav-item {
+        padding: 0.4em;
+    }
+    
+    #footer h3{
+        font-size: 24px;
+    }
+    #footer p{
+        font-size: 12px;
+    }
+    .footer-2 img{
+        width: 140px;
+    }
+    .footer-1 img{
+        width: 72px;
+    }
+    .footer-3, .footer-4 ul li{
+        font-size: 12px;
+    }
+    
+    
+}
+
+@media (max-width: 768px) {
+    #footer{
+        text-align: center;
+    }
+    .fa-shopping-bag{
+    
+    #pro-details .row {
+        padding: 20px 0px;
+    }
+}
+@media (max-width: 576px) {
+    .row{
+        text-align: center;
+    }
+    
+    #pro-details .row {
+        text-align: inherit;
+        padding: 20px 0px;
+    }
+    #pro-details h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+    
+}
